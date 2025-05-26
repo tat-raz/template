@@ -1,18 +1,17 @@
 import React from "react";
 import "../styles/Footer.css";
 
-interface FooterProps {
-  copyText: string;
-}
-
-const Footer: React.FC<FooterProps> = ({ copyText }) => (
-  <footer className="app-footer" role="contentinfo">
-    <div className="footer-content">
-      <p className="copyright">
-        &copy; {new Date().getFullYear()} {copyText}
-      </p>
-    </div>
-  </footer>
-);
+const Footer: React.FC = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-links">
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Terms</a>
+      </div>
+      <p>© 2025 Last.fm Clone</p>
+    </footer>
+  );
+};
 
 export default Footer;

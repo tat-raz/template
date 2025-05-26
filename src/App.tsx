@@ -1,25 +1,27 @@
-import React from 'react';
+import React from "react";
 import Header from "./components/Header";
-import Main from "./components/Main";
 import Footer from "./components/Footer";
-import "./index.css";
+import ArtistList from "./components/ArtistList";
+import TrackList from "./components/TrackList";
+import "./styles/App.css";
 
-function App() {
-  const navItems = [
-    { title: "Главная", url: "/" },
-    { title: "О нас", url: "/about" },
-    { title: "Контакты", url: "/contact" }
-  ];
-
-  const copyText = "Моя компания. Все права защищены.";
-
+const App: React.FC = () => {
   return (
-    <>
-      <Header navItems={navItems} />
-      <Main />
-      <Footer copyText={copyText} />
-    </>
+    <div className="app">
+      <Header />
+      <main className="main">
+        <section className="artists-section">
+          <h2>Popular Artists</h2>
+          <ArtistList />
+        </section>
+        <section className="tracks-section">
+          <h2>Popular Tracks</h2>
+          <TrackList />
+        </section>
+      </main>
+      <Footer />
+    </div>
   );
-}
+};
 
 export default App;
