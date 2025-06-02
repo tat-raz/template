@@ -3,14 +3,14 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ArtistList from "./components/ArtistList";
 import TrackList from "./components/TrackList";
-import TrendingNow from "./components/TrendingNow";
+import TopContent from "./components/TopContent";
 import "./styles/App.css";
 
 const App: React.FC = () => {
   return (
     <div className="app-wrapper">
       <Header />
-      <TrendingNow />
+      <TopContent />
       <main className="main">
         <section className="artists-section">
           <h2>Popular Artists</h2>
