@@ -1,0 +1,67 @@
+.container {
+  padding: 2rem;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #ff4081;
+  padding-left: 10px;
+}
+
+.artistGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.artistCard {
+  width: 150px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.artistCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
+}
+
+.artistImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.tracksList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.5rem;
+}
+
+.trackItem {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.trackItem:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+.loading {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #aaa;
+}
